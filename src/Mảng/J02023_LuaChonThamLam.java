@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class J020356_LuaChonThamLam {
+public class J02023_LuaChonThamLam {
     public static String inMax(int n,int s) {
         int i=0;
         int[] a = new int[n];

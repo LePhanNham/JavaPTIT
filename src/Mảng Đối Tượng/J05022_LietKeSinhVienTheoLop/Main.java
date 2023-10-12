@@ -7,16 +7,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int t =sc.nextInt();
         sc.nextLine();
-        ArrayList<SinhVien> arr = new ArrayList<>();
+        ArrayList<J05022_LietKeSinhVienTheoLop.SinhVien> arr = new ArrayList<>();
         while (t-->0) {
-            arr.add(new SinhVien(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextLine()));
+            arr.add(new J05022_LietKeSinhVienTheoLop.SinhVien(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextLine()));
         }
         int q = sc.nextInt();
         sc.nextLine();
         while (q-->0) {
             String lop = sc.nextLine();
             System.out.println("DANH SACH SINH VIEN LOP " + lop + ":");
-            for (SinhVien i : arr) {
+            for (J05022_LietKeSinhVienTheoLop.SinhVien i : arr) {
                 if (i.getLop().equals(lop)) {
                     System.out.println(i);
                 }

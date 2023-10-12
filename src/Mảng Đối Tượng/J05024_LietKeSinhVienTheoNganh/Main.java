@@ -9,16 +9,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         sc.nextLine();
-        ArrayList<SinhVien> arr = new ArrayList<>();
+        ArrayList<J05024_LietKeSinhVienTheoNganh.SinhVien> arr = new ArrayList<>();
         while (t-->0) {
-            arr.add(new SinhVien(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextLine()));
+            arr.add(new J05024_LietKeSinhVienTheoNganh.SinhVien(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextLine()));
         }
         int q = sc.nextInt();
         sc.nextLine();
         while (q-->0) {
             String nganh = sc.nextLine().toUpperCase();
             System.out.println("DANH SACH SINH VIEN NGANH " + nganh + ":");
-            for (SinhVien i : arr) {
+            for (J05024_LietKeSinhVienTheoNganh.SinhVien i : arr) {
                 Character cr = i.getLop().charAt(0);
                 if (i.getNganh().equalsIgnoreCase(nganh)) {
                     System.out.println(i);

@@ -6,17 +6,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<ThiSinh> arr = new ArrayList<>();
+        ArrayList<J05009_TimThuKhoaCuaKiThi.ThiSinh> arr = new ArrayList<>();
         int t =sc.nextInt();
 
         for (int i=1;i<=t;i++) {
             sc.nextLine();
-            arr.add(new ThiSinh(i,sc.nextLine(),sc.nextLine(),sc.nextDouble(),sc.nextDouble(),sc.nextDouble()));
+            arr.add(new J05009_TimThuKhoaCuaKiThi.ThiSinh(i,sc.nextLine(),sc.nextLine(),sc.nextDouble(),sc.nextDouble(),sc.nextDouble()));
         }
 
         Collections.sort(arr);
         double diem = arr.get(0).getTong();
-        for (ThiSinh i : arr) {
+        for (J05009_TimThuKhoaCuaKiThi.ThiSinh i : arr) {
             if (i.getTong()==diem) {
                 System.out.println(i);
             }

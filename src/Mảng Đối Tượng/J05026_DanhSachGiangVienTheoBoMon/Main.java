@@ -9,10 +9,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         sc.nextLine();
-        ArrayList<GiangVien> arr = new ArrayList<>();
+        ArrayList<J05026_DanhSachGiangVienTheoBoMon.GiangVien> arr = new ArrayList<>();
         for (int i=1;i<=t;i++) {
             String ma = String.format("GV%02d",i);
-            arr.add(new GiangVien(ma,sc.nextLine(),sc.nextLine()));
+            arr.add(new J05026_DanhSachGiangVienTheoBoMon.GiangVien(ma,sc.nextLine(),sc.nextLine()));
         }
         int q = sc.nextInt();
         sc.nextLine();
@@ -24,7 +24,7 @@ public class Main {
                 s+=ss[i].charAt(0);
             }
             System.out.println("DANH SACH GIANG VIEN BO MON " + s + ":");
-            for (GiangVien i : arr) {
+            for (J05026_DanhSachGiangVienTheoBoMon.GiangVien i : arr) {
                 if (i.getNganh().equalsIgnoreCase(s)) {
                     System.out.println(i);
                 }

@@ -10,7 +10,7 @@ public class Main {
             int n = sc.nextInt();
             boolean check = false;
             for(int i = 2; i <= 2*Math.sqrt(n); i++){
-                Pair<Integer, Integer> p = new Pair<>(i, n-i);
+                J07017_LopPair.Pair<Integer, Integer> p = new J07017_LopPair.Pair<Integer, Integer>(i, n-i);
                 if(p.isPrime()){
                     System.out.println(p);
                     check = true;

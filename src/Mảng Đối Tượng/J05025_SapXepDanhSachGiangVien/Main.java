@@ -9,13 +9,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         sc.nextLine();
-        ArrayList<GiangVien> arr = new ArrayList<>();
+        ArrayList<J05025_SapXepDanhSachGiangVien.GiangVien> arr = new ArrayList<>();
         for (int i=1;i<=t;i++) {
             String ma = String.format("GV%02d",i);
-            arr.add(new GiangVien(ma,sc.nextLine(),sc.nextLine()));
+            arr.add(new J05025_SapXepDanhSachGiangVien.GiangVien(ma,sc.nextLine(),sc.nextLine()));
         }
         Collections.sort(arr);
-        for (GiangVien i : arr) {
+        for (J05025_SapXepDanhSachGiangVien.GiangVien i : arr) {
             System.out.println(i);
         }
     }

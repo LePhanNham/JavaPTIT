@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.nextLine());
         for (int i=1;i<=t;i++) {
-            SinhVien a = new SinhVien(sc.nextLine(),i,sc.nextLine(),sc.nextLine(),sc.nextDouble());
+            J05003_DanhSachDoiTuongSinhVien.SinhVien a = new J05003_DanhSachDoiTuongSinhVien.SinhVien(sc.nextLine(),i,sc.nextLine(),sc.nextLine(),sc.nextDouble());
             System.out.println(a);
             sc.nextLine();
         }
