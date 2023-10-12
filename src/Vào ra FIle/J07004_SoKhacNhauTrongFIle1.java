@@ -1,19 +1,16 @@
 import java.io.*;
-import java.io.FileNotFoundException;
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.util.Scanner;
 
 public class J07004_SoKhacNhauTrongFIle1 {
-    public static void main(String[] args) throws FileNotFoundException,IOException {
-        DataInputStream sc = new DataInputStream(new FileInputStream("DATA.IN"));
-        int[] d = new int[1000];
-        for (int i=0;i<100000;i++) {
-            d[sc.readInt()]++;
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(new File("DATA.in"));
+        int a[] = new int[1000];
+        while (sc.hasNextInt()) {
+            a[sc.nextInt()]++;
         }
         for (int i=0;i<1000;i++) {
-            if(d[i]>0) {
-                System.out.println(i+" "+d[i]);
+            if (a[i]>0) {
+                System.out.println(i + " " + a[i]);
             }
         }
     }
