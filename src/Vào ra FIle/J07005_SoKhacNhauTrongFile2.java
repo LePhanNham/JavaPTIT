@@ -12,8 +12,8 @@ public class J07005_SoKhacNhauTrongFile2 {
         ObjectInputStream sc = new ObjectInputStream(new FileInputStream("DATA.in"));
         ArrayList<Integer> arr = (ArrayList<Integer>) sc.readObject();
         int[] d = new int[1000];
-        for (int i=0;i<100000;i++) {
-            d[sc.readInt()]++;
+        for (int i : arr) {
+            d[i]++;
         }
         for (int i=0;i<1000;i++) {
             if(d[i]>0) {
