@@ -10,8 +10,8 @@ public class J07005_SoKhacNhauTrongFile2 {
     public static void main(String[] args) throws FileNotFoundException,IOException {
         DataInputStream sc = new DataInputStream(new FileInputStream("DATA.IN"));
         int[] d = new int[1000];
-        for (int i : arr) {
-            d[i]++;
+        for (int i=0;i<100000;i++) {
+            d[sc.readInt()]++;
         }
         for (int i=0;i<1000;i++) {
             if(d[i]>0) {
