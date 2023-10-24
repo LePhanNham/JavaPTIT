@@ -3,14 +3,12 @@ import java.io.FileNotFoundException;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 
 
 public class J07005_SoKhacNhauTrongFile2 {
 
-    public static void main(String[] args) throws FileNotFoundException,IOException,ClassNotFoundException {
-        ObjectInputStream sc = new ObjectInputStream(new FileInputStream("DATA.in"));
-        ArrayList<Integer> arr = (ArrayList<Integer>) sc.readObject();
+    public static void main(String[] args) throws FileNotFoundException,IOException {
+        DataInputStream sc = new DataInputStream(new FileInputStream("DATA.IN"));
         int[] d = new int[1000];
         for (int i=0;i<100000;i++) {
             d[sc.readInt()]++;
