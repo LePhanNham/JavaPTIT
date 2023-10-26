@@ -1,4 +1,4 @@
-package J05005_DanhSachDoiTuongSinhVien3;
+package Mang_Doi_Tuong.J05005_DanhSachDoiTuongSinhVien3;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
