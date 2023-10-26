@@ -1,3 +1,4 @@
+package Mảng;
 import java.util.Scanner;
 
 public class J01018_SoKhongLienKe {
