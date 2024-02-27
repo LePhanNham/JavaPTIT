@@ -1,0 +1,92 @@
+package Mang_Doi_Tuong;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+class NhanVien6 {
+    private String id,name,chucvu;
+    private long luongngay,songay,luong,thuong,phucap,thuclinh;
+
+
+
+    public NhanVien6(String id, String name, long luongngay, long songay, String chucvu) {
+        this.id = id;
+        this.name = name;
+        this.luongngay = luongngay;
+        this.songay = songay;
+        this.chucvu = chucvu;
+        this.luong = this.luongngay * this.songay;
+        if (songay >=25) {
+            this.thuong =  (long)(luong/5);
+        }
+        else if (songay >=22) {
+            this.thuong = (long) (luong)/10;
+        }
+        else {
+            this.thuong =  0;
+        }
+        this.phucap = 0;
+        if (chucvu.equals("GD")) this.phucap = 250000;
+        else if (chucvu.equals("PGD")) this.phucap = 200000;
+        else if (chucvu.equals("TP")) this.phucap = 180000;
+        else if (chucvu.equals("NV")) this.phucap = 150000;
+        this.thuclinh = this.luong + this.phucap + this.thuong;
+    }
+
+    public long getThuclinh() {
+        return thuclinh;
+    }
+    public String toString() {
+        return id +  " " + name + " " + luong +  " " + thuong + " " + phucap + " " +  thuclinh;
+    }
+}
+public class J05038_BangKeTienLuong {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = Integer.parseInt(sc.nextLine());
+        ArrayList<NhanVien6> arr = new ArrayList<>();
+        for (int i=1;i<=t;i++ ) {
+            arr.add(new NhanVien6(String.format("NV%02d",i),sc.nextLine(),Long.parseLong(sc.nextLine()),Long.parseLong(sc.nextLine()),sc.nextLine()));
+        }
+        long tong = 0;
+        for (NhanVien6 i : arr) {
+            System.out.println(i);
+            tong += i.getThuclinh();
+        }
+        System.out.println("Tong chi phi tien luong: " + tong);
+    }
+}
+//5
+//Cao Van Vu
+//50000
+//26
+//GD
+//Bui Thi Trang
+//45000
+//23
+//PGD
+//Do Van Truong
+//40000
+//25
+//PGD
+//Nguyen Van Cam
+//37000
+//26
+//TP
+//Truong Thi Tu Linh
+//45000
+//22
+//NV
+
+//3
+//Cao Van Vu
+//50000
+//26
+//GD
+//Do Van Truong
+//40000
+//25
+//PGD
+//Truong Thi Tu Linh
+//45000
+//22
+//NV

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Mang_Doi_Tuong">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Mang_Doi_Tuong/J05028_DanhSachDoanhNghiepNhanSvTT.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Mang_Doi_Tuong/J05027_TimKiemGiangVien.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Mang_Doi_Tuong/J05029_DanhSachDoanhNghiepNhanSVTT2 (2).zip!/" />
+      <root url="jar://$PROJECT_DIR$/Mang_Doi_Tuong/J05028_DanhSachDoanhNghiepNhanSvTT (2).zip!/" />
+      <root url="jar://$PROJECT_DIR$/Mang_Doi_Tuong/J05029_DanhSachDoanhNghiepNhanSVTT2.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
